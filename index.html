@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+
+      <link
+        href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap"
+        rel="stylesheet"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    
+
+      <body>
+        <div class="container">
+          <h1 class="heading">
+            Tracking covid-19 cases in United States of America
+          </h1>
+          <p class="heading_info">
+            Covid-19 has killed at least 735,371 people and infected about 45.4
+            million in the United States since last January, according to data
+            by Johns Hopkins University.
+          </p>
+        </div>
+
+        <div class="datas">
+          <div class="grid-left">
+            <h3 class="datas-info">
+              Since January 2020, disease has spread to each state &
+              nearly every territory .
+              <img
+                src="https://ops.group/blog/wp-content/uploads/2020/07/US-STATES-COVID-MAP.png"
+              />
+            </h3>
+          </div>
+          <div class="grid_right">
+            <h2>TOTAL NUMBER OF COVID CASES PER STATES</h2>
+            <h3>Cases registered on March 7th 2021 for  states in United States</h3>
+            <div class="pics">
+              <canvas id="pics_chart" width="1000"height="500" > </canvas>
+         
+        </div>
+        
+        
+        </div>
+        <div class="text_box">
+          <h3>Find your 
+             state covid information right below..</h3>
+          <div class="search-box" id="textBox">
+
+            <form>
+             <input type ="text" placeholder="Enter state Abbrieviation.." id="search_input"></input>
+           
+             <button type="submit" class="give" id="enter"> Enter</button>
+             </form>
+            </div>
+             <div class="grid-container " id="match-list">
+                <div class="row">
+                 
+                  <div class="donut" >
+                   
+                    <h3>STATE COVID-DATA  GRAPH</h3>
+                   <canvas id="donut_chart" margin="20" width="400"height="420"></canvas>
+                  </div>
+                  </div>
+                  <div class="api_info">
+                    <form class="data_info" id="match-list">
+                      <input class="positive_cases" id="positive-case" value="Positive Cases :72235  " ></input>
+                      <input class="deaths"  id="death" value="Total-Deaths: 4212832"></input>
+                      <input class="Hospitalization"  id="hospital" value="Hospitalized:4460119"></input>
+                      <input class="tests" id="test" value="TestResults :15565536 "></input>
+                    </form>
+                  </div>
+                
+             </div>
+            </form>
+          </div>
+      </body>
+     
+      <script src="piechart.js"></script>
+    </head>
+  </html>
+</DOCTYPE>
